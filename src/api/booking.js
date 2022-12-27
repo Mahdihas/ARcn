@@ -1,6 +1,6 @@
 // Save a booking
 export const saveBooking = async bookingData => {
-    const url = `${process.env.REACT_APP_API_URL}/bookings`
+    const url = `http://localhost:5000/bookings`
   
     const response = await fetch(url, {
       method: 'POST',
@@ -17,7 +17,7 @@ export const saveBooking = async bookingData => {
   
   // Get All Bookings for user
   export const getAllBookingsByEmail = async email => {
-    const url = `${process.env.REACT_APP_API_URL}/bookings?email=${email}`
+    const url = `http://localhost:5000/bookings?email=${email}`
   
     const response = await fetch(url)
   
@@ -28,7 +28,7 @@ export const saveBooking = async bookingData => {
   
   // Get All Bookings for Admin
   export const getAllBookings = async () => {
-    const url = `${process.env.REACT_APP_API_URL}/bookings`
+    const url = `http://localhost:5000/bookings`
   
     const response = await fetch(url)
   
